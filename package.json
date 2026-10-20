@@ -1,0 +1,28 @@
+{
+  "name": "tc12_tc16",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cucumber and Playwright automation for Automation Exercise test cases TC12-TC16.",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:cart": "cucumber-js --tags @cart",
+    "test:orders": "cucumber-js --tags @orders",
+    "test:tc12": "cucumber-js --tags @TC12",
+    "test:tc13": "cucumber-js --tags @TC13",
+    "test:tc14": "cucumber-js --tags @TC14",
+    "test:tc15": "cucumber-js --tags @TC15",
+    "test:tc16": "cucumber-js --tags @TC16",
+    "test:tc20": "cucumber-js --tags @TC20",
+    "test:tc23": "cucumber-js --tags @TC23",
+    "test:tc25": "cucumber-js --tags @TC25"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4",
+    "dotenv": "^18.0.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
