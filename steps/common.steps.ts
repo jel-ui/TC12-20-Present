@@ -16,5 +16,3 @@ When('I open the Products page', async function (this: CustomWorld) {
 When('I click Signup \\/ Login', async function (this: CustomWorld) {
     await this.homePage.openSignupLogin();
 });
-
-//Click - verify tech

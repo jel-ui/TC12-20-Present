@@ -24,12 +24,11 @@ Before(async function (this: CustomWorld) {
     this.initializePages(page);
 });
 
-// Chụp ảnh sau mỗi step để theo dõi trạng thái trang trong Cucumber report.
 AfterStep(async function (this: CustomWorld) {
     if (!this.page || this.page.isClosed()) return;
 
     try {
-        // Chờ giao diện cập nhật xong để ảnh sau mỗi step dễ quan sát hơn khi demo.
+        // Chờ giao diện cập nhật xong để ảnh sau mỗi step
         await this.page.waitForTimeout(1_000);
         const screenshot = await this.page.screenshot({
             fullPage: false,
