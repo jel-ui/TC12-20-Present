@@ -25,17 +25,16 @@ export class HomePage {
     }
 
     async expectSubscriptionVisible() {
-        // TODO: Lấy locator của heading "SUBSCRIPTION" ở cuối trang (Inspect heading trong footer bằng DevTools).
-        await expect(this.page.getByRole('heading', { name: 'Subscription' })).toBeVisible();
+        await expect(
+            this.page.getByRole('heading', { name: 'Subscription' }))
+        .toBeVisible();
     }
 
     async clickScrollUpArrow() {
-        // TODO: Lấy locator của nút mũi tên lên ở góc dưới bên phải (Inspect nút sau khi cuộn xuống).
         await this.page.locator('#scrollUp').click();
     }
 
     async expectHomepageHeadingVisibleAtTop() {
-        // TODO: Lấy locator của heading "Full-Fledged practice website for Automation Engineers" (Inspect heading trên đầu trang).
         await expect(this.page.locator('h2').filter({ hasText: 'Full-Fledged practice website for Automation Engineers' }).first()).toBeVisible();
     }
 }
